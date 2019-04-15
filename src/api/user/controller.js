@@ -21,6 +21,7 @@ export const showMe = ({ user }, res) =>
 export const create = ({ bodymen: { body } }, res, next) =>
   User.create(body)
     .then(user => {
+      console.log(user);
       sign(user.id)
         .then((token) => ({ token, user: user.view(true) }))
         .then(success(res, 201))
