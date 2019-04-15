@@ -61,7 +61,7 @@ router.get('/:id',
  * @apiError 401 Master access only.
  * @apiError 409 Email already registered.
  */
-router.post('/',
+router.post('/register',
   body({ email, password, name, role }),
   create)
 
