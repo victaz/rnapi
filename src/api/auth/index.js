@@ -20,8 +20,6 @@ router.post('/',
   login)
 
 
-  router.get('/logout', (req, res) => {
-    console.log(req.body);
-  })
+
 
 export default router

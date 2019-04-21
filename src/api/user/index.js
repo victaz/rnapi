@@ -49,7 +49,7 @@ router.get('/:id',
   show)
 
 /**
- * @api {post} /users Create user
+ * @api {post} /users/register Create user
  * @apiName CreateUser
  * @apiGroup User
  * @apiParam {String} email User's email.
